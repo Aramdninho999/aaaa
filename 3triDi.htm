@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Biografía</title>
+    <style>
+        /* Estilos para cambiar el color de fondo */
+        body {
+            background-color: #2C3E50; /* Color de fondo */
+            color: white; /* Color del texto */
+            font-family: Arial, sans-serif; /* Tipo de fuente */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para la barra de menú */
+        nav {
+            background-color: #34495E; /* Color de fondo de la barra de menú */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Estilos para la tabla principal */
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: #34495E; /* Color celeste */
+            color: white; /* Texto en color blanco para mayor visibilidad */
+            border: 2px solid white; /* Bordes blancos */
+        }
+
+        th,
+        td {
+            border: 1px solid white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2C3E50; /* Color celeste más oscuro para encabezados */
+            color: #fff;
+            border-radius: 5px; /* Bordes redondeados */
+        }
+
+        /* Estilos para la sección de información */
+        #informacion {
+            background-color: #2C3E50; /* Color de fondo de la sección de información */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para la sección de tríptico y evaluación de soluciones web */
+        .contenido-triptico {
+            padding: 20px;
+        }
+
+        /* Estilos para las imágenes del tríptico */
+        .capturas-container {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .captura {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            margin-right: 10px;
+        }
+
+        /* Estilos para la sección de QR del tríptico */
+        #qr-triptico {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Estilos para la sección de audios del podcast */
+        #podcast {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Estilos para los controles de audio */
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body onload="mostrarInformacion('inicio');">
+    <center>
+        <strong><h1>3er Trimestre</h1></strong>
+    </center>
+    <nav>
+        <a href="#" onclick="mostrarInformacion('inicio');">
+            Tema
+        </a>
+        <a href="#" onclick="mostrarInformacion('acerca');">
+            Contenido
+        </a>
+        <a href="#" onclick="mostrarInformacion('servicios');">
+            Actividad
+        </a>
+    </nav>
+    <div id="informacion">
+        <!-- Aquí se mostrará la información adicional -->
+        <table>
+            <tr>
+                <th colspan="2">
+                    <h2>EVALUACIÓN DE SOLUCIONES WEB: INTRIAGO TIENDA DEPORTIVA</h2>
+                </th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <!-- Contenido de Evaluación -->
+
+                    <h2>Evaluación de Soluciones Web</h2>
+
+                    <!-- Contenido sobre Interactividad -->
+                    <h3>Interactividad</h3>
+                    <p>
+                        La interactividad es clave para atraer a los usuarios. En Intriago Tienda Deportiva, hemos implementado funciones como búsquedas avanzadas y un chat en vivo para mejorar la experiencia del usuario y facilitar la comunicación con nuestro equipo de ventas.
+                    </p>
+
+                    <!-- Contenido sobre Diseño -->
+                    <h3>Diseño</h3>
+                    <p>
+                        El diseño funcional y estético es fundamental. Hemos cuidado cada detalle, desde la disposición de las imágenes hasta la elección de colores y fuentes. La interfaz de usuario se ha desarrollado utilizando HTML, CSS y toques de JavaScript para transiciones suaves y elementos interactivos.
+                    </p>
+
+                    <!-- Contenido sobre Tiempo de Carga -->
+                    <h3>Tiempo de Carga</h3>
+                    <p>
+                        La optimización del tiempo de carga es esencial. Hemos aplicado técnicas como la compresión de imágenes y la carga diferida para garantizar una experiencia de carga rápida, incluso en conexiones más lentas.
+                    </p>
+
+                    <!-- Contenido sobre Número de Visitas -->
+                    <h3>Número de Visitas</h3>
+                    <p>
+                        Estrategias de marketing digital efectivas, SEO bien implementado y contenido de alta calidad han contribuido al crecimiento constante de la audiencia de Intriago Tienda Deportiva.
+                    </p>
+
+                    <!-- Contenido sobre Creatividad -->
+                    <h3>Creatividad</h3>
+                    <p>
+                        La creatividad se refleja en el diseño visual y en las descripciones de productos. Imágenes de alta calidad y descripciones persuasivas generan un mayor interés por parte de los visitantes.
+                    </p>
+
+                    <!-- Contenido sobre Análisis Costo-Beneficio -->
+                    <h3>Análisis Costo-Beneficio</h3>
+                    <p>
+                        La inversión en el desarrollo y mantenimiento del sitio web ha sido rentable. El análisis constante de costos y beneficios nos permite optimizar nuestras estrategias y maximizar el retorno de la inversión.
+                    </p>
+
+                    <!-- Contenido sobre Análisis de Desempeño -->
+                    <h3>Análisis de Desempeño</h3>
+                    <p>
+                        Monitoreamos métricas clave como tasa de conversión y tiempo de permanencia para realizar ajustes continuos y mantener la eficacia de la página a lo largo del tiempo.
+                    </p>
+
+                    <!-- Contenido del Tríptico -->
+                    <h2>Tríptico Intriago</h2>
+
+                    <!-- Contenido de las Imágenes del Tríptico -->
+                    <div class="capturas-container">
+                        <!-- Imágenes del Tríptico -->
+                        <img src="trip1.jpeg" alt="Imagen 1" class="captura">
+                        <img src="trip2.jpeg" alt="Imagen 2" class="captura">
+                    </div>
+
+                    <!-- Título de QR del Tríptico -->
+                    <h2 id="qr-triptico">QR del Tríptico</h2>
+
+                    <!-- Imagen del QR del Tríptico -->
+                    <img src="qrtripi.png" alt="QR Tríptico Intriago" style="width: 250px; height: 250px; border-radius: 10px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); margin-right: 10px;">
+
+                    <!-- Título de Podcast -->
+                    <h2 id="podcast">Podcast</h2>
+
+                    <!-- Controles de Audio para el Podcast -->
+                    <audio controls>
+                        <source src="audio1.mp3" type="audio/mp3">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+
+                    <audio controls>
+                        <source src="audio2.mp3" type="audio/mp3">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+
+                    <audio controls>
+                        <source src="audio3.mp3" type="audio/mp3">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
+

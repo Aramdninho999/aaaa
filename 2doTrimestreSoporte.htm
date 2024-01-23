@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Biografia</title>
+<Body background="fondo.jpg">
+<style>
+
+    /* Estilos para cambiar el color de la barra de menú */
+    nav {
+      background-color: #5DADE2; /* Cambia el color según tus preferencias */
+      padding: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;
+    }
+</style>
+<body text="white">
+<body onload="mostrarInformacion('inicio');">
+<center><strong><h1>2do Trimestre</h1></strong></center>
+<nav>
+    <a href="#" onclick="mostrarInformacion('inicio');" style="text-decoration: none; color: #333; padding: 10px;">
+   Tema
+    </a>
+    <a href="#" onclick="mostrarInformacion('acerca');" style="text-decoration: none; color: #333; padding: 10px;">
+     Contenido
+    </a>
+    <a href="#" onclick="mostrarInformacion('servicios');" style="text-decoration: none; color: #333; padding: 10px;">
+      Actividad
+    </a>
+  </nav>
+ <div id="informacion">
+    <!-- Aquí se mostrará la información adicional -->
+  </div>
+<script>
+    function mostrarInformacion(opcion) {
+      var informacionDiv = document.getElementById("informacion");
+      informacionDiv.innerHTML = ""; // Limpiar contenido previo
+	var videoURL = "cr7.mp4";
+	var audioURL = "l.mp3";
+      // Mostrar información correspondiente a la opción seleccionada
+      switch (opcion) {
+        case "inicio":
+          informacionDiv.innerHTML = "<h1><center>Tema</center></h1> <center><img src='temso2.jpg' width='1000' height='500'></center>";
+          break;
+        case "acerca":
+          informacionDiv.innerHTML = "<h2><center>Contenido</center></h2><center><img src='contenido2So.jpg' width='1000' height='500'> </center> ";
+          break;
+        case "servicios":
+          informacionDiv.innerHTML = "<h2><center>Actividad</center></h2><center><img src='actividad2So.jpg' width='1000' height='1000'> </center> ";
+                           
+          break;
+        case "contacto":
+          informacionDiv.innerHTML = "<audio src='audio.mp3' controls></audio> ";
+          break;
+        default:
+          informacionDiv.innerHTML = "<p>Información no disponible.</p>";
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Biografía</title>
+    <style>
+        body {
+            background-color: #fff; /* Fondo de la página blanco */
+            font-family: Arial, sans-serif; /* Cambia la fuente según tus preferencias */
+            margin: 0; /* Elimina el margen predeterminado del cuerpo */
+        }
+
+        header {
+            background-color: #3498DB; /* Color de fondo del encabezado */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #3498DB; /* Color de fondo de la barra de navegación */
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin: 0 10px; /* Espacio entre los enlaces del menú */
+        }
+
+        #contenido {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #contenido img {
+            height: 400px; /* Reducción de tamaño */
+            width: 400px; /* Reducción de tamaño */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar la imagen */
+            margin: 20px auto; /* Centrado horizontal y vertical */
+            display: block; /* Para centrar verticalmente */
+        }
+
+        #informacion {
+            background-color: #3498DB;
+            padding: 20px;
+            border-radius: 10px; /* Bordes redondeados */
+            margin-top: 20px;
+        }
+
+        .single-image {
+            width: 100%; /* Ajusta el ancho de la imagen */
+            max-width: 500px; /* Establece un ancho máximo para la imagen */
+            margin: 20px auto;
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar la imagen */
+        }
+    </style>
+</head>
+
+<body onload="mostrarInformacion('inicio');">
+    <header>
+        <h1>PRIMER TRIMESTRE</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="mostrarInformacion('inicio');">Diseño</a>
+        <a href="#" onclick="mostrarInformacion('acerca');">Otro Menú</a>
+    </nav>
+
+    <div id="informacion">
+        <table>
+            <tr>
+                <th colspan="2">
+                    <h2 style="text-align: center; background-color: #2980B9; padding: 10px; border-radius: 5px; color: #fff;">DISEÑO WEB</h2>
+                </th>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">
+                    <h2 style="text-align: center; background-color: #2980B9; padding: 10px; border-radius: 5px; color: #fff;">Joomla</h2>
+                    <p>
+                        Joomla es un sistema de gestión de contenidos (CMS) de código abierto que permite crear y gestionar sitios web y aplicaciones en línea. Fue lanzado por primera vez en 2005 y desde entonces ha ganado popularidad como una plataforma flexible y robusta para la creación de sitios web. Algunas características clave de Joomla incluyen:
+                    </p>
+                </td>
+                <td style="padding: 10px;">
+                    <h2 style="text-align: center; background-color: #2980B9; padding: 10px; border-radius: 5px; color: #fff;">WordPress</h2>
+                    <p>
+                        WordPress es otro sistema de gestión de contenidos (CMS) de código abierto, y es uno de los más populares y utilizados en la actualidad. Fue lanzado por primera vez en 2003 y ha evolucionado para convertirse en una plataforma versátil y amigable para la creación y gestión de sitios web. Algunas características clave de WordPress incluyen:
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="joomla.png" alt="Joomla Logo" class="single-image">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="wordp.png" alt="WordPress Logo" class="single-image">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="pasos.png" alt="Pasos Logo" class="single-image">
+                    <h3 style="text-align: center; margin-top: 10px;">Pasos de Instalación de Joomla y WordPress</h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
+
+

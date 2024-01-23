@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Proyecto Técnico</title>
+    <style>
+        body {
+            background-color: #4CAF50; /* Cambiado a verde */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #2E7D32; /* Nuevo color verde para el menú */
+            overflow: hidden;
+            text-align: center;
+            padding: 10px 0; /* Añadido espacio alrededor de la barra de navegación */
+        }
+
+        .menu-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            padding: 18px 20px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #388E3C; /* Nuevo color verde para el menú desplegable */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        #titulo-marco {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Proyecto Técnico</h1>
+    </header>
+
+    <div id="titulo-marco">
+        <h2>Página del Proyecto Desarrollada por el Estudiante ORTIZ TROYA del 3ro N</h2>
+    </div>
+
+    <nav>
+        <div class="menu-container">
+            <div class="dropdown">
+                <span class="dropbtn">Programación</span>
+                <div class="dropdown-content">
+                    <a href="1ertriPro.htm">1er Trimestre</a>
+                    <a href="2triProg.htm">2do Trimestre</a>
+                    <a href="3triProg.htm">3er Trimestre</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span class="dropbtn">Diseño Web</span>
+                <div class="dropdown-content">
+                    <a href="1triDi.htm">1er Trimestre</a>
+                    <a href="2triDi.htm">2do Trimestre</a>
+                    <a href="3triDi.htm">3er Trimestre</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span class="dropbtn">Sistemas Operativos</span>
+                <div class="dropdown-content">
+                    <a href="1ertriSi.htm">PRIMER/SEGUNDO/TERCER TRIMESTRE</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span class="dropbtn">Soporte Técnico</span>
+                <div class="dropdown-content">
+                    <a href="1triSo.htm">PRIMER SEGUNDO Y TERCERO</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(function (dropdown) {
+                dropdown.addEventListener('mouseover', function () {
+                    this.querySelector('.dropdown-content').style.display = 'block';
+                });
+                dropdown.addEventListener('mouseout', function () {
+                    this.querySelector('.dropdown-content').style.display = 'none';
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
